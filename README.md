@@ -25,7 +25,7 @@ CSS `display` property controls how elements are rendered in the web-page. Below
 
 ### 3. Inline-Block
 - Similar to inline but allows setting width and height.
-- However, if the content does not fit it behaves like block.
+- However, if the content does not fit —especially when working with text, it behaves like block.
 - Example:
   ```css
   button {
