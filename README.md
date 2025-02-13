@@ -1,7 +1,7 @@
 # CSS Display Methods
 
 ## Introduction
-CSS `display` property controls how elements are rendered in the document. Below are the key display methods:
+CSS `display` property controls how elements are rendered in the web-page. Below are the key display methods:
 
 ### 1. Block
 - Elements take up the full width of their container.
