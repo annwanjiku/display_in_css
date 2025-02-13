@@ -1,102 +1,102 @@
 # CSS Display Methods
 
 ## Introduction
-CSS provides various display methods that define how elements are rendered on a web page. The most common ones include `block`, `inline`, `flex`, `inline-flex`, and `grid`.
-
-## Display Types
+CSS `display` property controls how elements are rendered in the document. Below are the key display methods:
 
 ### 1. Block
-- Elements take up the full width of their parent container.
+- Elements take up the full width of their container.
 - Starts on a new line.
-- Examples: `<div>`, `<p>`, `<h1>`
-
-```css
-.block-element {
-  display: block;
-  width: 100%;
-  background-color: lightgray;
-}
-```
+- Example:
+  ```css
+  div {
+    display: block;
+  }
+  ```
 
 ### 2. Inline
-- Elements only take up as much width as their content.
+- Elements take up only as much width as needed.
 - Does not start on a new line.
-- Examples: `<span>`, `<a>`
+- Example:
+  ```css
+  span {
+    display: inline;
+  }
+  ```
 
-```css
-.inline-element {
-  display: inline;
-  color: blue;
-}
-```
+### 3. Inline-Block
+- Similar to inline but allows setting width and height.
+- Example:
+  ```css
+  button {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+  }
+  ```
 
-### 3. Inline-Flex
-- Behaves like an inline element but retains flexbox properties.
-- Allows child elements to be flex items while staying inline.
+### 4. Flex (Flexbox)
+- A layout model for distributing space among items in a container.
+- Use `display: flex;` to activate it.
+- Example:
+  ```css
+  .container {
+    display: flex;
+  }
+  ```
 
-```css
-.inline-flex-container {
-  display: inline-flex;
-  gap: 10px;
-}
-```
+### 5. Inline-Flex
+- Behaves like `inline-block` but with flex properties.
+- Example:
+  ```css
+  .container {
+    display: inline-flex;
+  }
+  ```
 
-### 4. Flexbox
-- A layout model that arranges elements along a flexible row or column.
-- Provides easy alignment and spacing.
+### 6. Grid
+- A two-dimensional layout system.
+- Use `display: grid;` to enable it.
+- Example:
+  ```css
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  ```
 
-```css
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-```
-
-### 5. Grid
-- Defines a two-dimensional layout system (rows and columns).
-- Offers precise placement and alignment.
-
-```css
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-```
-
-## Justify vs Align Properties
+## Alignment Properties
 
 ### Justify-Content (Main Axis)
-Controls alignment along the main axis (horizontal in `row`, vertical in `column`).
-
-```css
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-}
-```
+- Controls horizontal alignment in flexbox and grid.
+- Example:
+  ```css
+  .container {
+    display: flex;
+    justify-content: center; /* Aligns items in the center */
+  }
+  ```
 
 ### Align-Items (Cross Axis)
-Aligns items along the cross axis of a flex container.
-
-```css
-.flex-container {
-  display: flex;
-  align-items: center;
-}
-```
+- Aligns items along the perpendicular axis in flexbox and grid.
+- Example:
+  ```css
+  .container {
+    display: flex;
+    align-items: center; /* Aligns items to the middle */
+  }
+  ```
 
 ### Align-Content
-Controls the spacing between rows in a flex or grid container when there’s extra space.
-
-```css
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-}
-```
+- Aligns multiple rows in a flex or grid container.
+- Example:
+  ```css
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  ```
 
 ## Conclusion
-CSS display methods provide powerful layout control, whether using `block`, `inline`, `flex`, or `grid`. Understanding how to use `justify-content`, `align-items`, and `align-content` helps create well-structured designs.
+Understanding these display properties helps in building responsive and efficient layouts. Use `flexbox` for one-dimensional layouts and `grid` for two-dimensional layouts.
+
