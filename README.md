@@ -100,4 +100,5 @@ CSS `display` property controls how elements are rendered in the web-page. Below
 
 ## Conclusion
 Understanding these display properties helps in building responsive and efficient layouts. Use `flexbox` for one-dimensional layouts and `grid` for two-dimensional layouts.
+[Examples](https://annwanjiku.github.io/displayIncss/)
 
